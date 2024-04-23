@@ -1,0 +1,1 @@
+import{a as e}from"./axios-Cm0UX6qg.js";import{u as r}from"./token-Cfw4qG7q.js";import{n as t}from"./index-CWVWdIaL.js";async function c(s){try{const o=r();(await e.get("http://localhost:8080/api/check_token",o.getAxiosAuthorizationConfig())).status===200&&await t.push(s)}catch(o){o.response&&o.response.status===401&&(console.error("timeout"),await t.push("/"))}}export{c as n};
